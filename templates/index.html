@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Judul Halaman -->
+	<title>KLASIFIKASI MOTIF BATIK INDONESIA</title>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Icon -->
+	<link rel="shortcut icon" href="..\static\batik.ico">
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="..\static\css\bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="..\static\css\client_side1.css" type="text/css">
+	
+	<!-- JavaScript -->
+	<script src="..\static\js\jquery_3.6.0.min.js" ></script>
+	<script src="..\static\js\bootstrap_3.4.1.min.js"></script>
+</head>
+
+<body id="halamanku" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <style>
+        body {
+            background-image: url('..\static\images\background1.jpg');
+            background-color: #ffffff;
+            height: "600";
+            width: "800";
+        }
+    </style>
+	<!-- Navigation Bar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			
+			<!-- Logo -->
+			<div class="navbar-header">
+				<img src="..\static\images\batik.png"Museum Batik
+				width="50" height="50" align="left">
+				<a class="navbar-brand" href="#halamanku">&#160; <b>Klasifikasi Motif Batik Indonesia</b></a>
+			</div>
+			
+			<!-- Daftar Halaman -->
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#home">HOME</a></li>
+					<li><a href="#webcam">APPLICATION</a></li>
+					<li><a href="#anggotaKelompok">ABOUT GROUPS</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Bagian Halaman (Informasi) -->
+	<div id="home" class="container-fluid">
+		<br>
+		<br>
+		<div class="row">
+			<div class="col-sm-6">
+				<h2><b>MUSEUM BATIK</b></h2>
+				<h4>Klasifikasi Motif Batik Indonesia</h4><br>
+				<p style="text-align: justify;text-justify: inter-word;">
+					Aplikasi ini dibuat khusus untuk mendeteksi sebuah objek dari gambar yang diberikan.
+					Adapun model yang digunakan untuk klasifikasi gambar ini adalah Convolutional Neural Network (CNN). 
+					Pada dataset Indonesian Batik Motifs, terdapat 20 objek yang dapat diklasifikasi yaitu batik bali, batik betawi, batik celup, batik cendrawasih, batik ceplok, batik ciamis, batik garutan, batik kawung, batik keraton, batik lasem, batik megamendung, batik parang, batik pekalongan, batik priangan, batik sekar, batik sidoluhur, batik sidomukti, batik sogan, dan batik tambal.
+					Untuk dapat menggunakan aplikasi ini, pengguna hanya mengunggah sebuah gambar dengan format 'JPG'. 
+					Hasil deteksi objek akan ditampilkan setelah pengguna mengunggah gambar tersebut.
+				</p>
+				<br>
+
+				<!-- Tombol Mulai -->
+				<nav id="navgo" class="navbar" style="background-color:#ffffff;z-index: 0;">
+					<ul class="nav nav-pills">
+						<li class="nav-item">
+							<a class="btn btn-default btn-lg" href="#webcam" style="background-color:#28ace5">Mulai</a>
+						</li>
+					</ul>
+				</nav>
+
+			</div>
+			<div class="col-sm-6">
+				<br>
+				<br>
+				<!-- Gambar Deskripsi Aplikasi -->
+				<div align="center">
+					<img src="..\static\images\batik yes.jpg" height="200" ></img>
+				</div>
+			</div>
+		</div>
+		<br>
+	</div>
+
+		<!-- Bagian Halaman (Aplikasi) -->
+	<div id="webcam" data-bs-spy="scroll" data-bs-target="#navgo" data-bs-offset="0" class="scrollspy-example" tabindex="0"></div>
+	<br>
+		<br>
+		<div class="row">
+			<div class="col-sm-6">
+		<h1>WEBCAM</h1>
+		<section class="col-sm " >
+			<img src="{{ url_for('webapp') }}"width=80% align="left">
+		</br>
+	</section>
+</div>
+
+	<!-- Bagian Halaman (Anggota Kelompok) -->
+	<div id="anggotaKelompok" class="container-fluid">
+		<br>
+		<h2>ABOUT GROUPS</h2>
+		<h4>Broyden 3</h4>
+		<br>
+		<div class="row">
+			<div class="col-sm-4">
+				<span class="glyphicon glyphicon-user logo-small"></span>
+				<h4><b>EKARINI LATHIFAH</b></h4>
+				<p>INSTITUT TEKNOLOGI TELKOM PURWOKERTO</p>
+			</div>
+			<div class="col-sm-4">
+				<span class="glyphicon glyphicon-user logo-small"></span>
+				<h4><b>HAMONANGAN JONATHAN</b></h4>
+				<p>UNIVERSITAS GAJAH MADA</p>
+			</div>
+			<div class="col-sm-4">
+				<span class="glyphicon glyphicon-user logo-small"></span>
+				<h4><b>RACHMAN MAULANA</b></h4>
+				<p>STMIK WIDYA UTAMA</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="container-fluid text-center">
+		<a href="#halamanku" title="To Top">
+			<span class="glyphicon glyphicon-chevron-up"></span>
+		</a>
+		<p>Museum Batik <br> <a href="https://orbitfutureacademy.id/">orbitfutureacademy.id</a></p>
+	</footer>
+
+	<!-- JavaScript untuk Animasi Scroll dan Prediksi Model -->
+	<script  src="..\static\js\client_side.js"></script>
+
+</body>
+</html>
