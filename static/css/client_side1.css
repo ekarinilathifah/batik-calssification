@@ -136,4 +136,9 @@ footer .glyphicon {
 	}
 }
 
+.col-sm-4 img{
+	border-radius:50%;
+	border:25px rgb(52, 52, 84);
+}
+
   
